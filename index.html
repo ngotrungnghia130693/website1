@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>www.website.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="image/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/index.js"></script>
+<script>
+  function startTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+    setTimeout(startTime, 1000);
+  }
+  
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+  }
+  </script>
+</head>
+
+<style>
+    .imagecon:nth-child(1){
+        background-image: url('image/sg1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .imagecon:nth-child(2){
+        background-image: url('image/sg2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .imagecon:nth-child(3){
+        background-image: url('image/sg3.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .imagecon:nth-child(4){
+        background-image: url('image/sg4.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .imagecon:nth-child(5){
+        background-image: url('image/sg5.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+
+<body>
+  
+    <div id="navbar">
+        <a href="#" id="logo">Trung Nghĩa's  Website</a>
+        <div id="navbar-right">
+          <a class="active" href="#">Home</a>
+          <a href="https://linktr.ee/trungnghia93">Contact</a>
+          <a href="#">About</a>
+        </div>
+    </div>
+
+    <div class="header">
+      <body onload="startTime()">
+        <h1>Thời Gian Hiện Tại </h1>
+        <p> <b><div id="txt"></div></b> </p>
+        <h2>Ho Chi Minh, Viet Nam ( Utc +7 )</h2>
+        
+      
+        
+        
+        
+        </body>
+       
+    </div>
+
+    <div class="slider">
+      <div class="sliderchild">
+        <div class="imagecon"></div>
+        <div class="imagecon"></div>
+        <div class="imagecon"></div>
+        <div class="imagecon"></div>
+        <div class="imagecon"></div>
+      </div>
+	  </div>
+
+    <div class="row">
+      <div class="side">
+        <h2><span>About Me</span></h2>
+        <div class="fakeimg">
+          <img src="image/profile.jpg" alt="" width="220px" height="200px">
+        </div>
+        <p>I'm Nghia , A Software Developer and A Industrial Informatics Ingineer</p>
+        <h2>Tech Skills</h2>
+        <h4>Web Development</h4>
+          <div class="fakeimgs">
+            <p>Frontend - HTML, CSS, JavaScript</p>
+          </div>
+          <div class="fakeimgs">
+            <p>Backend - PHP.</p>
+          </div>
+          <div class="fakeimgs">
+            <p>Database - MySQL.</p>
+          </div>
+        <br><br>
+        <h4>Programming Language</h4>
+          <div class="fakeimgs">
+            <p> C++, Java and python </p>
+          </div>
+          <h4>Control Engineering and Automation</h4>
+          <div class="fakeimgs">
+            <p>Programming, repair devices (PLC Schneider, Siemens, Mitsubishi)
+              and HMI (Wincc) with Ethernet,Wifi connection by IIoT Vbox.</p>
+          </div>
+          
+        <br><br>
+        
+      </div>
+      <div class="main">
+        <h2><span>My Personal Website</span></h2>
+        <h5>Website description, Jul 15, 2021</h5>
+          <div class="fakeimg" style="height:200px;">
+            <img src="image/saigon.jpg" alt="" height="400px" width="950px">
+          </div>
+        <div style="margin-top: 25%;">
+          <h2><span>Sài Gòn Cố Lên</span></h2>
+          <h5>Miêu tả thông tin , Jul 15, 2021</h5>
+          
+          <p>May có TP. HCM sầm uất, nhiều việc làm người dân quê mình vào đó chăm chỉ làm ăn, nên giờ mới có nhà cao cửa đẹp như hôm nay. Xem trên tivi, thấy TP. HCM tấp nập giờ nằm yên để chiến đấu với Covid mà thương, mà thèm được nhìn cảnh tắc đường, nhộn nhịp. Thèm nghe tiếng người rao bán hàng rong đêm, ngày hay đơn giản là những quán bia vỉa hè dành cho những người lao động nghèo uống để hạ nhiệt sau một ngày làm việc trong nắng oi ả của TP. HCM
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer"
+      <h3>&copy; Copyright 2021. All Right Reserved</h3>
+      <h3>Developed by Trung Nghĩa</h3>
+      
+    </div>
+    
+
+</body>
+</html>
